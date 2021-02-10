@@ -1,0 +1,43 @@
+buildscript {
+    ext.versions = [
+        accompanist: '0.5.0',
+        compose: '1.0.0-alpha11',
+        deferredResources: '1.2.1',
+        kotlin: '1.4.21-2',
+    ]
+    ext.deps = [
+        accompanistInsets: "dev.chrisbanes.accompanist:accompanist-insets:$versions.accompanist",
+        composeFoundation: "androidx.compose.foundation:foundation:$versions.compose",
+        composeMaterial: "androidx.compose.material:material:$versions.compose",
+        composeMaterialIcons: "androidx.compose.material:material-icons-extended:$versions.compose",
+        composeRuntime: "androidx.compose.runtime:runtime:$versions.compose",
+        composeUi: "androidx.compose.ui:ui:$versions.compose",
+        composeUiTest: "androidx.compose.ui:ui-test-junit4:$versions.compose",
+        composeUiTooling: "androidx.compose.ui:ui-tooling:$versions.compose",
+        composeThemeAdapter: "com.google.android.material:compose-theme-adapter:$versions.compose",
+    ]
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.0-alpha05"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+    }
+
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+
+        // TODO: Remove Bintray dependencies when possible
+        maven { url 'https://dl.bintray.com/kotlin/kotlinx' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
