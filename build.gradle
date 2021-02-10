@@ -2,7 +2,6 @@ buildscript {
     ext.versions = [
         accompanist: '0.5.0',
         compose: '1.0.0-alpha11',
-        deferredResources: '1.2.1',
         kotlin: '1.4.21-2',
     ]
     ext.deps = [
