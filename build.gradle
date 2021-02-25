@@ -1,8 +1,8 @@
 buildscript {
     ext.versions = [
-        accompanist: '0.5.1',
-        compose: '1.0.0-alpha12',
-        composeActivity: '1.3.0-alpha02',
+        accompanist: '0.6.0',
+        compose: '1.0.0-beta01',
+        composeActivity: '1.3.0-alpha03',
         kotlin: '1.4.30',
     ]
     ext.deps = [
@@ -19,7 +19,7 @@ buildscript {
     ]
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.0-alpha07'
+        classpath 'com.android.tools.build:gradle:7.0.0-alpha08'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
 
         classpath 'dev.drewhamilton.poko:poko-gradle-plugin:0.7.1'
