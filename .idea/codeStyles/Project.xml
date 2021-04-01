@@ -150,6 +150,12 @@
     </codeStyleSettings>
     <codeStyleSettings language="kotlin">
       <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
+      <option name="METHOD_ANNOTATION_WRAP" value="5" />
+      <option name="CLASS_ANNOTATION_WRAP" value="5" />
+      <option name="FIELD_ANNOTATION_WRAP" value="5" />
+      <option name="PARAMETER_ANNOTATION_WRAP" value="5" />
+      <option name="VARIABLE_ANNOTATION_WRAP" value="5" />
+      <option name="ENUM_CONSTANTS_WRAP" value="5" />
     </codeStyleSettings>
   </code_scheme>
 </component>
